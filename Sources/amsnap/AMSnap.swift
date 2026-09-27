@@ -18,10 +18,10 @@ struct AMSnap: AsyncParsableCommand {
         """
     )
 
-    @Option(help: "Centre latitude in degrees.")
+    @Option(parsing: .unconditional, help: "Centre latitude in degrees.")
     var lat: Double
 
-    @Option(help: "Centre longitude in degrees.")
+    @Option(parsing: .unconditional, help: "Centre longitude in degrees.")
     var lon: Double
 
     @Option(help: "Web-Mercator zoom level, 0–20. Fractions allowed.")
